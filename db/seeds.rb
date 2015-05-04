@@ -12,3 +12,8 @@ Zebra.create weight: 500
 Zebra.create weight: 450
 Zebra.create weight: 800
 Zebra.create weight: 550
+
+
+Turtle.create status: true
+Turtle.create status: false
+Turtle.create status: true
