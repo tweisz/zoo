@@ -6,3 +6,9 @@ Tiger.create appetite: 200
 Tiger.create appetite: 400
 Tiger.create
 Tiger.create
+
+
+Zebra.create weight: 500
+Zebra.create weight: 450
+Zebra.create weight: 800
+Zebra.create weight: 550
