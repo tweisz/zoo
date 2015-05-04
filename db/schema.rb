@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150504032557) do
+ActiveRecord::Schema.define(version: 20150504033112) do
 
   create_table "giraffes", force: :cascade do |t|
     t.integer  "height"

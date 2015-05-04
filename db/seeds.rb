@@ -17,3 +17,8 @@ Zebra.create weight: 550
 Turtle.create status: true
 Turtle.create status: false
 Turtle.create status: true
+
+
+Giraffe.create height: 18
+Giraffe.create height: 14
+Giraffe.create height: 6
