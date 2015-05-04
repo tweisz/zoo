@@ -22,4 +22,14 @@ RSpec.describe Tiger, type: :model do
 		expect(tiger.appetite).to eq(500)
 	end
 
+	it "is hungry when its appetite is > 0" do
+		tiger = Tiger.new
+		expect(tiger.hungry?).to eq(true)
+	end
+
+	it "is not hungry when its appetite is = 0" do
+		tiger = Tiger.new(appetite: 0)
+		expect(tiger.hungry?).to eq(false)
+	end
+	
 end
