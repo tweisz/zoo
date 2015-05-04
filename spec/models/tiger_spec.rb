@@ -31,5 +31,19 @@ RSpec.describe Tiger, type: :model do
 		tiger = Tiger.new(appetite: 0)
 		expect(tiger.hungry?).to eq(false)
 	end
-	
+
+	it "loses its appetite after eating a zebra" do
+		tiger = Tiger.new(appetite: 800)
+		zebra = Zebra.new(weight: 500)
+		tiger.eat(zebra)
+		expect(tiger.appetite).to eq(300)
+	end
+
+	it "removes the zebra from the zoo after eating" do
+		tiger = Tiger.new
+		zebra = Zebra.new(weight: 400)
+		tiger.eat(zebra)
+		#now I need to test if the zebra is still there or it is gone
+		expect(zebra).to_not be_valid
+	end
 end
