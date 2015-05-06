@@ -10,7 +10,7 @@ class Tiger < ActiveRecord::Base
 		else
 			self.appetite = 0
 		end
-		
+
 		zebra.destroy
 	end
 
