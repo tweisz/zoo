@@ -17,4 +17,16 @@ RSpec.describe Turtle, type: :model do
 		expect(turtle.status).to eq(true)
 	end
 
+	it "has a status of false when it has emerged from its shell" do
+		turtle = Turtle.create(status: true)
+		turtle.emerge()
+		expect(turtle.status).to eq(false)
+	end
+
+	it "has a status of true when it has hidden in its shell" do
+		turtle = Turtle.create(status: false)
+		turtle.hide()
+		expect(turtle.status).to eq(true)
+	end
+
 end
