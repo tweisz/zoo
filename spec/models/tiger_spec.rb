@@ -44,7 +44,7 @@ RSpec.describe Tiger, type: :model do
 		zebra = Zebra.create(weight: 400)
 		id = zebra.id
 		tiger.eat(zebra)
-		#now I need to test if the zebra is still there or it is gone
-		# expect(zebra.where(id: id)).to exist <== DOESN'T WORK YET
+		expect(Zebra.where(id: id)).to_not exist
 	end
+	
 end
